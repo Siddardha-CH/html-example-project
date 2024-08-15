@@ -9,9 +9,36 @@
     <form action="">
         <h1>Payment Form</h1>
         <h2>Contact Information</h2>
-        <p>Name: <input type="text" name="name"></p>
-        <p>male <input type="radio" name="gender" id=""></p>
-        <p>female <input type="radio" name="gender" id=""></p>
+        <p>Name: <input type="text" name="name" required></p>
+        <fieldset>
+            <legend>Gender</legend>
+        <p>male <input type="radio" name="gender" id="">female <input type="radio" name="gender" id=""></p>
+        </fieldset>
+        <p>Adress: <textarea name="adress" id="adress" cols="90" rows="7"></textarea></p>
+        <p>Email: <input type="email" name="email" id="email"></p>
+        <p>PIncode: <input type="number" name="pincode" id="pincode"></p>
+        <hr>
+        <h2>Payment details</h2>
+        <p>Card Type:
+            <select name="Card_type" id="Card_type">
+                <option value="">--Select a Card Type--</option>
+                <option value="visa">visa</option>
+                <option value="rupay">rupay</option>
+                <option value="mastercard">mastercard</option>
+            </select>
+        </p>
+        <p>card number:
+            <input type="number" name="number" id="number">
+        </p>
+        <p>Expiry:
+            <input type="date" name="Expiryexpiry" id="Expiry">
+        </p>
+        <p>CVV:
+            <input type="password" name="password" id="password">
+        </p>
+        <center>
+        <input type="submit" value="Proceed for Payment">
+    </center>
 
 
 
